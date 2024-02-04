@@ -39,7 +39,8 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     staging: 
-      jaffle_shop:
-        +materialized: view 
-      stripe:
-        +materialized: table
+      +materialized: view
+    intermediate: 
+      +materialized: view
+    marts:
+      +materialized: table

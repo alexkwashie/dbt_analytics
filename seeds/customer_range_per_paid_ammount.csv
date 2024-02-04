@@ -1,0 +1,6 @@
+min_range,max_range,membership_class
+0,99.999,Regular
+100,499.999,Bronze
+500,1499.999,Silver
+1500,4999.999,Gold
+5000,999999,Platinum
