@@ -13,8 +13,10 @@ select
     pto.credit_amount, 
     pto.total_amount, 
     case
-        when status = 'completed' then 1
+        when status = 'completed' 
+        then 1
         else 0
     end as is_order_completed
+    
 from orders as ord
 left join payment_type_orders as pto ON ord.order_id = pto.order_id

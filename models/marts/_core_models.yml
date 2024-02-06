@@ -1,9 +1,9 @@
 version: 2
 
 models:
-    - name: fct_orders
-      description: Analytical orders data. 
-      columns:
+  - name: fct_orders
+    description: Analytical orders data.
+    columns:
       - name: order_id
         description: Primary key of the orders.
       - name: customer_id
@@ -19,9 +19,9 @@ models:
       - name: is_order_completed
         description: "{{ doc('is_order_completed_docblock') }}"
 
-    - name: dim_customers
-      description: Customer data. It allows you to analyze customers perspective linked facts. 
-      columns:
+  - name: dim_customers
+    description: Customer data. It allows you to analyze customers perspective linked facts.
+    columns:
       - name: customer_id
         description: Primary key of the customers.
       - name: first_name
