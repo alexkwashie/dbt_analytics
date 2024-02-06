@@ -7,4 +7,4 @@ select
 from {{ source('jaffle_shop', 'orders')}}
 
 
---Use source to show link to database and also show in data lineage
+-- Use source to show link to database and also show in data lineage
